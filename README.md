@@ -2,6 +2,17 @@
 
  https://www.youtube.com/playlist?list=PLSZmgSPNdTKZPq-3XGoyAHaHAdjpVh4wj
 
+
+site contains task system for players at the town to recive points for their work at the town.
+
+/
+
+сайт имеет систему задач для жителей в которой жители могут получать баллы за выполнения задания/
+<br />
+<br />
+<br />
+<br />
+
 this is my minecraft task manager with chat app frontend. 
 
 ** to run project u should have .env file at the project folder and u should put backend adress at that file like that:
