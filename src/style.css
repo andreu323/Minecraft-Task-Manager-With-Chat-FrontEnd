@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer components {
+    body {
+        font-family: "minecraft_font";
+        @apply text-white;
+    }
+
+    .bg_px_round {
+        image-rendering: pixelated;
+     
+        -webkit-mask-box-image: url(/images/bg_px.png);
+        -webkit-mask-box-image-slice: 3 fill;
+        -webkit-mask-box-image-width: 15px;
+        -webkit-mask-box-image-repeat: round;
+
+    }
+    
+    .circle_px_round {
+        image-rendering: pixelated; 
+        -webkit-mask-box-image: url(/images/circle_px.png);
+ 
+    }
+    
+    .outline_px_rouned {
+        image-rendering: pixelated;
+        -webkit-mask-box-image: url(/images/outline_px.png);
+        pointer-events: none;
+        -webkit-mask-box-image-slice: 10;
+        -webkit-mask-box-image-width: 10px;
+        -webkit-mask-box-image-repeat: round;
+    }
+
+    .scrollbar::-webkit-scrollbar {
+        width: 10px;
+    }
+     
+    /* Track */
+    .scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    .scrollbar::-webkit-scrollbar-thumb {
+        background-color: #272727;
+    }
+
+    /* Handle on hover */
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+   
+    input[type=text]  {
+        @apply p-3 text-xl w-full bg-transparent    border-2 border-gray-600 text-[16px]  text-white !outline-none;
+    }
+    input[type=number]  {
+        @apply p-3 text-xl w-full bg-transparent    border-2 border-gray-600 text-[16px]  text-white !outline-none;
+    }
+    .scrollbar-light::-webkit-scrollbar {
+        width: 10px;
+    }
+     
+    /* Track */
+    .scrollbar-light::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    /* Handle */
+    .scrollbar-light::-webkit-scrollbar-thumb {
+        background-color: rgb(198, 198, 198);
+    }
+
+    /* Handle on hover */
+    .scrollbar-light::-webkit-scrollbar-thumb:hover {
+        background-color: white;
+    }
+}
+.cl-content  {
+    @apply !bg-black border-2 border-white !min-h-[200px];
+}
+@font-face {
+    font-family: 'minecraft_font_ten';
+    src: url('/fonts/minecraft_font_ten.ttf');
+
+
+}
+.input:empty:not(:focus):before {
+    content: attr(data-text);
+    @apply text-gray-400;
+}
+@font-face {
+    font-family: 'minecraft_font';
+    src: url('/fonts/minecraft_font.ttf');
+
+
+}
