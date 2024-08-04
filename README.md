@@ -1,5 +1,7 @@
 ﻿# Minecraft Task Manager With Chat App FronEnd
 
+ https://www.youtube.com/playlist?list=PLSZmgSPNdTKZPq-3XGoyAHaHAdjpVh4wj
+
 this is my minecraft task manager with chat app frontend. 
 
 ** to run project u should have .env file at the project folder and u should put backend adress at that file like that:
